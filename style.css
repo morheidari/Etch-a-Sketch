@@ -4,8 +4,6 @@ body{
     align-items: center;
 }
 .bord {
-    width: 1000px;
-    height: 1000px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -16,4 +14,8 @@ body{
 .grid{
     border-style: dotted;
     border-width: 1px;
+}
+
+.hover{
+    background-color: black;
 }

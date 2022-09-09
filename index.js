@@ -1,4 +1,4 @@
-let grids = [];
+const grids = [];
 let rows = [];
 let bord = document.querySelector(".bord");
 let dim = 1000;
@@ -6,8 +6,6 @@ let dimDiv = dim / 16 + "px";
 for (let i=0; i<16; i++){
     rows[i] = document.createElement('div');
     rows[i].style.display = "flex";
-    rows[i].style.width = dim + "px";
-    rows[i].style.height = dimDiv;
     rows[i].style.flexShrink = 0;
     rows[i].style.flexGrow = 0;
     bord.appendChild(rows[i])
@@ -19,4 +17,13 @@ for (let i=0; i<16; i++){
         grids[j].style.flexGrow = 0;
         grids[j].classList.add("grid")
         rows[i].appendChild(grids[j])
-}}
+        }
+    }
+
+rows.forEach((row) => Array.from(row.childNodes).forEach(cell => cell.addEventListener('mouseover', (e) => {
+    e.target.classList.toggle('hover')
+})))
+
+
+
+
