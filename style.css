@@ -2,20 +2,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .bord {
     display: flex;
+    width: 1000px;
+    height: 1000px;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex: 0,0,100%;
+    flex: none;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
-}
-
-.grid{
-    border-style: dotted;
-    border-width: 1px;
+    box-sizing: border-box;
 }
 
 .hover{
     background-color: black;
+}
+
+button{
+    font-size: 25px;
 }
