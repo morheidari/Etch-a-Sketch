@@ -8,7 +8,7 @@ body{
 .bord {
     display: flex;
     width: fit-content;
-    height: 1000px;
+    height: 600px;
     flex-direction: column;
     flex: none;
     justify-content: center;

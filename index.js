@@ -2,7 +2,7 @@ const grids = [];
 let rows = [];
 let bord = document.querySelector(".bord");
 const button = document.querySelector('button')
-let dim = 1000;
+let dim = 600;
 let nGrids = 16; 
 createBord(nGrids);
 button.addEventListener('click', () => {
